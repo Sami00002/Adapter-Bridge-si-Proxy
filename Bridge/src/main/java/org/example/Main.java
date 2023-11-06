@@ -8,7 +8,7 @@ public class Main {
         Message shortSMS = new ShortMessage(smsSender);
         Message longEmail = new LongMessage(emailSender);
 
-        shortSMS.send(); // Output: Sending SMS: This is a short message.
-        longEmail.send(); // Output: Sending Email: This is a long message that might be split into multiple parts.
+        shortSMS.send(); 
+        longEmail.send(); 
     }
 }
