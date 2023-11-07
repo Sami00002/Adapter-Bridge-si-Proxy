@@ -15,16 +15,16 @@ public class Main {
             int choice = keyboard.nextInt();
 
             if (choice == 0) {
-                break; // Exit the loop and end the program
+                break;
             }
 
             if (choice == 5) {
-                // Undo previous command
+                // Undo
                 if (!commandHistory.undoLastCommand()) {
                     System.out.println("No commands to undo.");
                 }
             } else if (choice == 6) {
-                // Redo previous undone command
+                // Redo
                 if (!commandHistory.redoLastUndoneCommand()) {
                     System.out.println("No commands to redo.");
                 }
